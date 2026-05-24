@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustCert Gas Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f8fafc; margin: 0; padding: 2rem; color: #0f172a; }
+    .wrap { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 24px rgba(15,23,42,.08); }
+    h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+    p.meta { margin: 0 0 1.5rem; color: #64748b; font-size: .9rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 2rem; font-size: .9rem; }
+    th, td { border: 1px solid #e2e8f0; padding: .6rem .75rem; text-align: left; }
+    th { background: #f1f5f9; }
+    tr:nth-child(even) { background: #f8fafc; }
+    .note { margin-top: 1rem; font-size: .85rem; color: #64748b; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>TrustCert — Gas Consumption by Operation</h1>
+    <p class="meta">Hardhat local (chain ID 31337) · Source: GasAnalysis.test.js · 2026-05-16</p>
+    <canvas id="chart" height="120"></canvas>
+    <table>
+      <thead>
+        <tr><th>Operation</th><th>Gas Used (units)</th><th>Cost (ETH)</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Register University</td><td>71,995</td><td>0.000128</td><td>One-time admin</td></tr>
+        <tr><td>Issue Certificate</td><td>390,749</td><td>0.000655</td><td>Mint credential</td></tr>
+        <tr><td>Revoke Certificate</td><td>98,254</td><td>0.000149</td><td>Invalidate cert</td></tr>
+        <tr><td>Replace Certificate</td><td>520,092</td><td>0.000728</td><td>Version upgrade</td></tr>
+        <tr><td>Verify (view)</td><td>0</td><td>0</td><td>Off-chain read (~42 ms)</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Open this file in a browser to view the chart. Export PNG: right-click chart → Save image.</p>
+  </div>
+  <script>
+    const labels = ["Register University", "Issue", "Revoke", "Replace", "Verify (view)"];
+    const data = [71995, 390749, 98254, 520092, 0];
+    const colors = ["#6366f1", "#059669", "#dc2626", "#d97706", "#94a3b8"];
+    new Chart(document.getElementById("chart"), {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [{
+          label: "Gas used (units)",
+          data,
+          backgroundColor: colors,
+          borderRadius: 6,
+        }],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `Gas: ${ctx.parsed.y.toLocaleString()} units`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: "Gas (units)" },
+            ticks: { callback: (v) => v.toLocaleString() },
+          },
+        },
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.next/
+coverage/
+.env
+.env.local
+.env.*.local
+cache/
+artifacts/
+typechain-types/
+*.log
+.DS_Store
+uploads/
+hardhat-deployments.json

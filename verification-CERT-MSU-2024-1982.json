@@ -1,0 +1,91 @@
+{
+  "certificateId": "CERT-MSU-2024-1982",
+  "source": {
+    "database": true,
+    "blockchain": true
+  },
+  "certificate": {
+    "studentName": "John",
+    "studentId": "STU-2024-112",
+    "degree": "BSc Computer Science",
+    "department": "School of Engineering",
+    "issueDate": "2026-06-15T23:00:00.000Z",
+    "status": "ACTIVE",
+    "revocationReason": null,
+    "replacedByCertificateId": null,
+    "previousCertificateId": null,
+    "versionNumber": 1,
+    "ipfsCid": "Qmco6srgztUrvrBB4XfDQ9HL1rpPdwYKwNKrGL81NvjW9f",
+    "ipfsUrl": "https://gateway.pinata.cloud/ipfs/Qmco6srgztUrvrBB4XfDQ9HL1rpPdwYKwNKrGL81NvjW9f",
+    "certificateHash": "0x62bccc57ee0ab910a4d54547fa75fa842a5b3080d6a15b65cd63a706c93c090a",
+    "issuerWallet": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+  },
+  "isValid": true,
+  "onChain": {
+    "exists": true,
+    "isValid": true,
+    "status": "ACTIVE",
+    "studentName": "John",
+    "degree": "BSc Computer Science",
+    "issueDate": 1781568000,
+    "revocationReason": "",
+    "replacedByCertificateId": "",
+    "previousCertificateId": "",
+    "versionNumber": 1,
+    "certificateHash": "0x62bccc57ee0ab910a4d54547fa75fa842a5b3080d6a15b65cd63a706c93c090a",
+    "ipfsCid": "Qmco6srgztUrvrBB4XfDQ9HL1rpPdwYKwNKrGL81NvjW9f",
+    "responseTimeMs": 25
+  },
+  "history": {
+    "database": [
+      {
+        "id": "0bba30eb-546c-4d55-b24b-b26a015cba99",
+        "certificate_id": "CERT-MSU-2024-1982",
+        "related_certificate_id": null,
+        "action": "ISSUED",
+        "old_status": null,
+        "new_status": "ACTIVE",
+        "reason": null,
+        "performed_by": "9c89d63a-e22f-45ba-939e-b1077b188238",
+        "wallet_address": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "metadata": {},
+        "created_at": "2026-05-16T17:59:25.307Z"
+      }
+    ],
+    "blockchain": [
+      {
+        "certificateId": "CERT-MSU-2024-1982",
+        "studentName": "John",
+        "studentId": "STU-2024-112",
+        "degree": "BSc Computer Science",
+        "department": "School of Engineering",
+        "issueDate": 1781568000,
+        "issuerWallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "certificateHash": "0x62bccc57ee0ab910a4d54547fa75fa842a5b3080d6a15b65cd63a706c93c090a",
+        "ipfsCid": "Qmco6srgztUrvrBB4XfDQ9HL1rpPdwYKwNKrGL81NvjW9f",
+        "status": "ACTIVE",
+        "revocationReason": "",
+        "previousCertificateId": "",
+        "replacedByCertificateId": "",
+        "versionNumber": 1,
+        "revokedAt": 0,
+        "replacedAt": 0
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "tx_hash": "0x1eb7cc365e01c57dacf095b1a550c115ba2f434ef53f73651c1f4cb23365314d",
+      "action": "ISSUE",
+      "status": "CONFIRMED",
+      "gas_used": "436192",
+      "confirmation_time_ms": 32,
+      "created_at": "2026-05-16T17:59:25.297Z",
+      "confirmed_at": "2026-05-16T17:59:25.297Z"
+    }
+  ],
+  "verificationTimeMs": 47,
+  "verifyUrl": "http://localhost:3000/verify?id=CERT-MSU-2024-1982",
+  "qrCodeDataUrl": "data:image/png;base64,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",
+  "ipfsDocumentNote": null
+}

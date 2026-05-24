@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <style>
+    .title { font: 700 22px system-ui, sans-serif; fill: #0f172a; }
+    .subtitle { font: 14px system-ui, sans-serif; fill: #475569; }
+    .label { font: 13px system-ui, sans-serif; fill: #334155; }
+    .value { font: 12px system-ui, sans-serif; fill: #0f172a; font-weight: 600; }
+    .axis { stroke: #cbd5e1; stroke-width: 1; }
+    .grid { stroke: #e2e8f0; stroke-width: 1; }
+  </style>
+  <rect width="920" height="520" fill="#f8fafc"/>
+  <text x="460" y="42" text-anchor="middle" class="title">TrustCert  Gas Consumption by Operation</text>
+  <text x="460" y="68" text-anchor="middle" class="subtitle">Hardhat local network (chain ID 31337) � gas units</text>
+
+  <!-- Y-axis grid & labels (max 520092) -->
+  <line x1="80" y1="100" x2="80" y2="420" class="axis"/>
+  <line x1="80" y1="420" x2="860" y2="420" class="axis"/>
+
+  <line x1="80" y1="420" x2="860" y2="420" class="grid"/>
+  <text x="72" y="424" text-anchor="end" class="label">0</text>
+
+  <line x1="80" y1="356" x2="860" y2="356" class="grid"/>
+  <text x="72" y="360" text-anchor="end" class="label">130k</text>
+
+  <line x1="80" y1="292" x2="860" y2="292" class="grid"/>
+  <text x="72" y="296" text-anchor="end" class="label">260k</text>
+
+  <line x1="80" y1="228" x2="860" y2="228" class="grid"/>
+  <text x="72" y="232" text-anchor="end" class="label">390k</text>
+
+  <line x1="80" y1="164" x2="860" y2="164" class="grid"/>
+  <text x="72" y="168" text-anchor="end" class="label">520k</text>
+
+  <!-- Bars: scale max=520092, plot height=320px -->
+  <!-- Register: 71995 -> 44.4px -->
+  <rect x="130" y="375.6" width="100" height="44.4" fill="#6366f1" rx="4"/>
+  <text x="180" y="368" text-anchor="middle" class="value">71,995</text>
+  <text x="180" y="448" text-anchor="middle" class="label">Register</text>
+  <text x="180" y="466" text-anchor="middle" class="label">University</text>
+
+  <!-- Issue: 390749 -> 240.6px -->
+  <rect x="280" y="179.4" width="100" height="240.6" fill="#059669" rx="4"/>
+  <text x="330" y="172" text-anchor="middle" class="value">390,749</text>
+  <text x="330" y="448" text-anchor="middle" class="label">Issue</text>
+
+  <!-- Revoke: 98254 -> 60.5px -->
+  <rect x="430" y="359.5" width="100" height="60.5" fill="#dc2626" rx="4"/>
+  <text x="480" y="352" text-anchor="middle" class="value">98,254</text>
+  <text x="480" y="448" text-anchor="middle" class="label">Revoke</text>
+
+  <!-- Replace: 520092 -> 320px -->
+  <rect x="580" y="100" width="100" height="320" fill="#d97706" rx="4"/>
+  <text x="630" y="92" text-anchor="middle" class="value">520,092</text>
+  <text x="630" y="448" text-anchor="middle" class="label">Replace</text>
+
+  <!-- Verify: 0 -->
+  <rect x="730" y="420" width="100" height="2" fill="#94a3b8" rx="2"/>
+  <text x="780" y="412" text-anchor="middle" class="value">0</text>
+  <text x="780" y="448" text-anchor="middle" class="label">Verify</text>
+  <text x="780" y="466" text-anchor="middle" class="label">(view)</text>
+
+  <text x="460" y="500" text-anchor="middle" class="subtitle">Verify is off-chain (view function)  no gas on-chain</text>
+</svg>

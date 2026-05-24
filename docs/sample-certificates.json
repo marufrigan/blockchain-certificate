@@ -1,0 +1,48 @@
+[
+  {
+    "certificateId": "CERT-MSU-2024-001",
+    "studentName": "Alice Johnson",
+    "studentId": "STU-2024-1001",
+    "degree": "Bachelor of Science in Computer Science",
+    "department": "School of Engineering",
+    "issueDate": "2024-06-15",
+    "university": "Metropolitan State University",
+    "status": "ACTIVE",
+    "versionNumber": 1
+  },
+  {
+    "certificateId": "CERT-MSU-2024-002",
+    "studentName": "Raj Patel",
+    "studentId": "STU-2024-1042",
+    "degree": "Master of Business Administration",
+    "department": "School of Business",
+    "issueDate": "2024-07-22",
+    "university": "Metropolitan State University",
+    "status": "ACTIVE",
+    "versionNumber": 1
+  },
+  {
+    "certificateId": "CERT-PIT-2023-089",
+    "studentName": "Maria Santos",
+    "studentId": "STU-2023-2201",
+    "degree": "Bachelor of Engineering (Electrical)",
+    "department": "Faculty of Engineering",
+    "issueDate": "2023-11-30",
+    "university": "Pacific Institute of Technology",
+    "status": "REPLACED",
+    "replacedByCertificateId": "CERT-PIT-2023-089-v2",
+    "versionNumber": 1
+  },
+  {
+    "certificateId": "CERT-PIT-2023-089-v2",
+    "studentName": "Maria Santos",
+    "studentId": "STU-2023-2201",
+    "degree": "Bachelor of Engineering (Electrical) with Honours",
+    "department": "Faculty of Engineering",
+    "issueDate": "2024-01-15",
+    "university": "Pacific Institute of Technology",
+    "status": "ACTIVE",
+    "previousCertificateId": "CERT-PIT-2023-089",
+    "versionNumber": 2
+  }
+]

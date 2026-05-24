@@ -1,0 +1,52 @@
+{
+  "network": "hardhat",
+  "chainId": "31337",
+  "measuredAt": "2026-05-16T18:08:20.978Z",
+  "operations": [
+    {
+      "action": "REGISTER_UNIVERSITY",
+      "gasUsed": 71995,
+      "gasPriceWei": "1773907754",
+      "transactionCostWei": "127712488749230",
+      "transactionCostEth": "0.00012771248874923",
+      "blockNumber": 2
+    },
+    {
+      "action": "ISSUE",
+      "gasUsed": 390749,
+      "gasPriceWei": "1677401441",
+      "transactionCostWei": "655442935669309",
+      "transactionCostEth": "0.000655442935669309",
+      "blockNumber": 3,
+      "certificateId": "CERT-GAS-001"
+    },
+    {
+      "action": "VERIFY_VIEW",
+      "gasUsed": 0,
+      "note": "view call — no on-chain gas",
+      "verificationResponseTimeMs": 42
+    },
+    {
+      "action": "REVOKE",
+      "gasUsed": 98254,
+      "gasPriceWei": "1520525025",
+      "transactionCostWei": "149397665806350",
+      "transactionCostEth": "0.00014939766580635",
+      "blockNumber": 5,
+      "certificateId": "CERT-GAS-002"
+    },
+    {
+      "action": "REPLACE",
+      "gasUsed": 520092,
+      "gasPriceWei": "1399422858",
+      "transactionCostWei": "727828633062936",
+      "transactionCostEth": "0.000727828633062936",
+      "blockNumber": 7,
+      "oldCertificateId": "CERT-GAS-003",
+      "newCertificateId": "CERT-GAS-003-v2"
+    }
+  ],
+  "totals": {
+    "issueRevokeReplaceGas": 1009095
+  }
+}

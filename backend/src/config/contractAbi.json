@@ -1,0 +1,13 @@
+[
+  "function registerUniversity(address wallet)",
+  "function issueCertificate(string certificateId, string studentName, string studentId, string degree, string department, uint256 issueDate, bytes32 certificateHash, string ipfsCid, string previousCertificateId, uint256 versionNumber)",
+  "function revokeCertificate(string certificateId, string reason)",
+  "function replaceCertificate(string oldCertificateId, string newCertificateId, string studentName, string studentId, string degree, string department, uint256 issueDate, bytes32 certificateHash, string ipfsCid)",
+  "function verifyCertificate(string certificateId) view returns (bool exists, bool isValid, uint8 status, string studentName, string degree, uint256 issueDate, string revocationReason, string replacedByCertificateId, string previousCertificateId, uint256 versionNumber, bytes32 certificateHash, string ipfsCid)",
+  "function getCertificate(string certificateId) view returns (tuple(string certificateId, string studentName, string studentId, string degree, string department, uint256 issueDate, address issuerWallet, bytes32 certificateHash, string ipfsCid, uint8 status, string revocationReason, string previousCertificateId, string replacedByCertificateId, uint256 versionNumber, uint256 revokedAt, uint256 replacedAt))",
+  "function getCertificateHistory(string certificateId) view returns (string[] historyIds, tuple(string certificateId, string studentName, string studentId, string degree, string department, uint256 issueDate, address issuerWallet, bytes32 certificateHash, string ipfsCid, uint8 status, string revocationReason, string previousCertificateId, string replacedByCertificateId, uint256 versionNumber, uint256 revokedAt, uint256 replacedAt)[] historyCerts)",
+  "function isActiveCertificate(string certificateId) view returns (bool)",
+  "event CertificateIssued(string indexed certificateId, string studentId, address indexed issuer, uint256 versionNumber, bytes32 certificateHash, string ipfsCid)",
+  "event CertificateRevoked(string indexed certificateId, address indexed revoker, string reason, uint256 revokedAt)",
+  "event CertificateReplaced(string indexed oldCertificateId, string indexed newCertificateId, address indexed issuer, uint256 oldVersion, uint256 newVersion)"
+]

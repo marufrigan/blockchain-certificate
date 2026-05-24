@@ -1,0 +1,114 @@
+{
+  "source": "postgresql_blockchain_transactions",
+  "exportedAt": "2026-05-16T18:06:11.619Z",
+  "transactionCount": 8,
+  "aggregates": [
+    {
+      "action": "ISSUE",
+      "count": 6,
+      "avgGasUsed": 101337,
+      "minGasUsed": 34210,
+      "maxGasUsed": 436192,
+      "avgConfirmationTimeMs": 29
+    },
+    {
+      "action": "REVOKE",
+      "count": 2,
+      "avgGasUsed": 61108,
+      "minGasUsed": 23950,
+      "maxGasUsed": 98266,
+      "avgConfirmationTimeMs": 24
+    }
+  ],
+  "transactions": [
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-001",
+      "txHash": "0xf1083ed590070c6bbe0a79664d3cfd93f599e4336853ba2bbe35f3a4191dfe72",
+      "gasUsed": 34420,
+      "gasPriceWei": "1875000000",
+      "estimatedCostWei": "64537500000000",
+      "confirmationTimeMs": 39,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:18:49.957Z"
+    },
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-002",
+      "txHash": "0x4a03e36e0a9e7187c7f9c4052c2091bd82c190063bde91f3a75dfb99b83686e9",
+      "gasUsed": 34420,
+      "gasPriceWei": "1765750490",
+      "estimatedCostWei": "60777131865800",
+      "confirmationTimeMs": 29,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:19:52.321Z"
+    },
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-123",
+      "txHash": "0xa42dd33d30f24821c47172db22e12fe8a07baaf6dacb1af9f77aceb1ae88b733",
+      "gasUsed": 34420,
+      "gasPriceWei": "1670141501",
+      "estimatedCostWei": "57486270464420",
+      "confirmationTimeMs": 26,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:21:39.727Z"
+    },
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-124",
+      "txHash": "0x85ec17d45840c3a2ee18197693baf0a482b9c01f7bfb0fb085ccbdd6b62da575",
+      "gasUsed": 34360,
+      "gasPriceWei": "1586469923",
+      "estimatedCostWei": "54511106554280",
+      "confirmationTimeMs": 23,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:23:01.313Z"
+    },
+    {
+      "action": "REVOKE",
+      "certificateId": "CERT-MSU-2024-124",
+      "txHash": "0xfd5fbeebb2391082d868d6f5ca86cc4f2856905d89b8e6f904cec6e124275f44",
+      "gasUsed": 23950,
+      "gasPriceWei": "1513245146",
+      "estimatedCostWei": "36242221246700",
+      "confirmationTimeMs": 24,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:25:20.580Z"
+    },
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-222",
+      "txHash": "0xdf90a61d101487b547ed3a9e3d4a54d88ec76bf8ff633f790a9149fe6f9ed53e",
+      "gasUsed": 34210,
+      "gasPriceWei": "1449140721",
+      "estimatedCostWei": "49575104065410",
+      "confirmationTimeMs": 26,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T00:27:22.879Z"
+    },
+    {
+      "action": "ISSUE",
+      "certificateId": "CERT-MSU-2024-1982",
+      "txHash": "0x1eb7cc365e01c57dacf095b1a550c115ba2f434ef53f73651c1f4cb23365314d",
+      "gasUsed": 436192,
+      "gasPriceWei": "1677401441",
+      "estimatedCostWei": "731669089352672",
+      "confirmationTimeMs": 32,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T17:59:25.297Z"
+    },
+    {
+      "action": "REVOKE",
+      "certificateId": "CERT-MSU-2024-1982",
+      "txHash": "0x02d25393945d1c1934c59e80b8d25a1eb16e61778c18e343aba12b3bc3c94f2c",
+      "gasUsed": 98266,
+      "gasPriceWei": "1593957416",
+      "estimatedCostWei": "156631819440656",
+      "confirmationTimeMs": 24,
+      "network": "localhost",
+      "confirmedAt": "2026-05-16T18:04:30.848Z"
+    }
+  ],
+  "note": null
+}

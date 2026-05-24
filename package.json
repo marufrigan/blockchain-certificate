@@ -1,0 +1,33 @@
+{
+  "name": "revocable-academic-certificates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Revocable Blockchain-Based Academic Certificate Management System",
+  "workspaces": [
+    "contracts",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=contracts && npm install --workspace=backend && npm install --workspace=frontend",
+    "dev": "bash scripts/dev.sh",
+    "start:demo": "bash scripts/start-demo.sh",
+    "build:api": "npm run build:api --workspace=backend",
+    "compile": "npm run compile --workspace=contracts",
+    "test:contracts": "npm run test --workspace=contracts",
+    "test:backend": "npm run test --workspace=backend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "db:migrate": "npm run db:migrate --workspace=backend",
+    "db:seed": "npm run db:seed --workspace=backend",
+    "chain:local": "bash scripts/hardhat-node.sh",
+    "deploy:local:full": "bash scripts/deploy-local.sh",
+    "stop:all": "bash scripts/stop-all.sh",
+    "stop:apps": "bash scripts/stop-apps.sh",
+    "gas:analysis": "HARDHAT_VIA_IR=true npm run gas:analysis --workspace=contracts",
+    "gas:from-db": "node backend/src/scripts/gasAnalysisFromDb.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
