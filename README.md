@@ -237,3 +237,4 @@ Sample certificate metadata: [docs/sample-certificates.json](docs/sample-certifi
 ## License
 
 MIT — Academic research prototype.
+# blockchain-certificate
